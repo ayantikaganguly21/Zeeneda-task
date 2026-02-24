@@ -1,1 +1,25 @@
-
+Session02
+Question 1: What was the objective of the Session 2 Hands-on Lab?
+Answer:
+The objective of the Session 2 lab was to apply elicitation techniques and stakeholder analysis to transform raw meeting input into structured, stakeholder-ready artifacts. The goal was to identify stakeholders, prepare an elicitation plan, extract and triage requirements candidates using AI assistance, and draft a clear problem statement and scope boundary. The lab emphasized traceability, structured documentation, and human validation of AI outputs to ensure correctness and stakeholder alignment.
+Question 2: How was stakeholder analysis performed in the lab?
+Answer:
+In the lab, stakeholder analysis was conducted by identifying 8–12 key stakeholders involved in the maintenance work order modernization case. These included the Maintenance Manager, Planner, Technician Lead, Operations Lead, Technicians, Inventory/Parts Team, IT Support, Finance Representative, and Senior Leadership. For each stakeholder, their role, influence, interest, and impact were analyzed. A power–interest approach was used to categorize stakeholders into “manage closely,” “keep satisfied,” “keep informed,” and “monitor.” This helped prioritize engagement efforts and reduce the risk of missing critical voices early in the process.
+Question 3: What elicitation plan was created for the case study?
+Answer:
+A structured elicitation plan was prepared outlining three interviews and one workshop. Interviews were planned with the Maintenance Manager, Planner, and Technician Lead to understand pain points, priority rules, SLA definitions, and operational constraints. A cross-functional workshop was planned to align on priority rules and reporting needs. Each session had a defined purpose, expected outputs, and a confirmation step for playback. The plan also included preparation of open-ended interview questions and identification of decision points requiring stakeholder approval.
+Question 4: How was AI used to process the meeting transcript?
+Answer:
+The provided transcript about inconsistent work order handling was entered into the Meetings database. AI was used to generate a structured summary, identify action items, extract stakeholders and glossary terms, and produce requirements candidates. The AI helped quickly convert unstructured conversation into organized artifacts. However, all AI outputs were reviewed manually to verify correctness, remove assumptions, and ensure alignment with the original transcript. This ensured responsible and traceable use of AI in the elicitation process.
+Question 5: What requirements candidates were extracted from the transcript?
+Answer:
+Several requirements candidates were extracted, including the need for a standardized work order intake system, clear priority rules with SLA targets, visibility into parts availability, ability to attach photos to work orders, weekly reporting on backlog and SLA breaches, tracking of downtime hours, audit history of changes, and limiting Phase 1 to the top five work order categories. Each candidate was classified by type such as feature, rule, data, report, or non-functional requirement. Confidence levels and open questions were added to highlight areas needing clarification.
+Question 6: What problem statement was drafted in the lab?
+Answer:
+The drafted problem statement explained that maintenance teams currently receive work orders through inconsistent channels such as phone calls, WhatsApp, and paper, leading to lost requests and poor visibility of urgent tasks. Priority rules are unclear, and leadership lacks reporting visibility into SLA breaches and downtime. This creates operational inefficiencies and delays. The need is to implement a standardized and trackable work order process with clear priority rules and reporting capabilities to improve SLA compliance and operational visibility, while considering constraints such as phased rollout and documented policies.
+Question 7: What scope was defined for Phase 1?
+Answer:
+The Phase 1 scope included standardized work order intake, defined priority and SLA rules, basic assignment functionality, audit history tracking, and weekly reporting of backlog and SLA breaches. Out-of-scope items for Phase 2 included advanced optimization features, full mobile redesign, and expansion beyond the top five work order categories. Assumptions included agreement on priority rules and SLA definitions. Success measures included reduction in SLA breaches, improved backlog visibility, and decreased downtime.
+Question 8: What AI Use Log entry was created?
+Answer:
+An AI Use Log entry was created documenting that AI was used for summarizing the meeting transcript, extracting stakeholders and glossary terms, generating requirements candidates, and identifying open questions. The log also recorded that all outputs were manually verified against the transcript, unclear items were marked for confirmation, and no sensitive information was included. This ensured transparency, accountability, and responsible AI usage within the analysis workflow.
