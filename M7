@@ -1,1 +1,21 @@
-
+Question 1: What was the objective of Session 7 lab?
+Answer:
+The objective of Session 7 was to validate the requirements and KPIs developed in previous sessions by applying Quality Assurance practices, creating traceability links, and designing structured test cases. The lab focused on ensuring that every approved requirement is testable, traceable to business goals, and verified through clear test scenarios. It also introduced Application Lifecycle Management concepts to manage requirements, defects, and test artifacts in a structured and auditable way.
+Question 2: What is traceability and why is it important?
+Answer:
+Traceability is the ability to link business objectives to requirements, requirements to test cases, and test cases to validation results. In the lab, a traceability matrix was created to connect KPIs such as SLA Compliance and Backlog to their corresponding requirements and test cases. Traceability ensures that no requirement is left untested and that every dashboard metric can be justified by documented business rules. It reduces project risk, improves transparency, and supports audit readiness.
+Question 3: How was the traceability matrix prepared?
+Answer:
+The traceability matrix was prepared by listing each approved requirement with its unique requirement ID and linking it to related KPI measures and corresponding test case IDs. Each row clearly showed the connection between requirement, implementation (DAX measure or data rule), and validation test. Status fields such as Draft, Validated, Passed, or Failed were added to track progress. This structured mapping ensured full coverage and accountability across development and testing phases.
+Question 4: How were test cases designed in the lab?
+Answer:
+Test cases were designed using a structured format including Test Case ID, Requirement ID, Objective, Preconditions, Test Steps, Expected Result, and Status. For example, for SLA Compliance, a test case verified that a work order closed within the SLA target is counted as compliant. Another test case checked that backlog excludes work orders with status “Closed.” Edge cases such as missing timestamps, invalid priority, or incorrect date sequences were also included. This ensured validation of both functional logic and data integrity.
+Question 5: What types of testing were performed?
+Answer:
+The lab included functional testing to verify KPI calculations, data validation testing to ensure data quality rules were respected, and edge case testing to check unusual scenarios such as null values or incorrect date formats. Basic regression testing was also considered to confirm that changes in one measure did not break other dependent calculations. This comprehensive testing approach improved reliability of the Power BI dashboard.
+Question 6: What role does ALM play in this lab?
+Answer:
+Application Lifecycle Management (ALM) provides a structured approach to managing requirements, development artifacts, and testing activities throughout the project lifecycle. In this lab, ALM principles were applied by maintaining version control of requirements, tracking validation status, documenting assumptions, and linking defects to specific requirements. This ensures controlled change management and prevents scope creep or undocumented modifications.
+Question 7: What were the final deliverables of Session 7 lab?
+Answer:
+The final deliverables included a completed traceability matrix, a set of structured test cases covering all approved requirements, documented test results, and a QA summary report highlighting validation outcomes and identified issues. These artifacts ensured that the dashboard solution was accurate, aligned with stakeholder expectations, and ready for final review or deployment.
