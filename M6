@@ -1,1 +1,21 @@
-
+Question 1: What was the objective of Session 6 lab?
+Answer:
+The objective of Session 6 was to transform validated requirements and KPI definitions into a clean, structured, and dashboard-ready Power BI solution. The lab focused on preparing CSV data using Power Query, building a simple star schema model, creating DAX measures for maintenance KPIs, and designing stakeholder-friendly dashboard pages. The goal was to ensure that KPIs such as backlog, SLA compliance, downtime, and MTTR are accurate, traceable, and aligned with previously defined business rules.
+Question 2: What were the main steps in Data Preparation?
+Answer:
+The first step was importing CSV files such as WorkOrders, Assets, Technicians, and SLAs into Power BI. In Power Query, data types were corrected, such as converting dates into DateTime format and downtime into whole numbers. Text fields like priority and status were standardized into consistent allowed values such as P1 to P4 and Open, In Progress, Closed. Duplicate work order IDs were checked, missing mandatory fields were identified, and invalid rows were flagged. Referential integrity was verified to ensure asset_id and technician_id exist in their respective dimension tables. All cleaning steps were documented to maintain transparency and repeatability.
+Question 3: How was the data model designed in Power BI?
+Answer:
+A star schema model was created with Fact_WorkOrders as the central fact table containing transactional data. Dimension tables such as Dim_Assets, Dim_Technicians, Dim_SLA, and Dim_Date were connected to the fact table using one-to-many relationships. Filtering direction was kept single-direction from dimension to fact to avoid ambiguity. A separate Date table was created and marked as a date table to support time-based analysis. This modeling approach improved performance, prevented double counting, and ensured predictable filtering behavior across reports.
+Question 4: What DAX measures were created for KPI calculation?
+Answer:
+Several DAX measures were created to implement business KPIs. Total Work Orders was calculated using COUNTROWS. Open Work Orders (Backlog) was calculated by filtering where status is not Closed. Closed Work Orders filtered status equal to Closed. SLA Compliance Percentage was calculated as the number of closed work orders completed within SLA target divided by total closed work orders. SLA Breaches was calculated as total closed minus on-time closed. Total Downtime was calculated as the sum of downtime_minutes. MTTR (Mean Time to Repair) was calculated as the average difference between started_at and closed_at for completed work orders. All measures were designed to respond dynamically to slicers and filters.
+Question 5: How was the dashboard structured?
+Answer:
+The dashboard was designed with two main report pages. The first page, Operations Overview, displayed key KPI cards such as Backlog, SLA Compliance Percentage, SLA Breaches, and Total Downtime. Supporting visuals included backlog trend over time, SLA compliance trend, backlog by priority, and downtime by location. The second page focused on SLA and backlog details, showing breaches by priority, backlog aging buckets, and a table listing breached work orders. Slicers were added for date range, priority, location, and asset to allow interactive analysis.
+Question 6: What assumptions and data quality checks were documented?
+Answer:
+Several assumptions were documented, including the definition of SLA clock as created_at to closed_at, treatment of missing downtime values as blank instead of zero, and exclusion of planned maintenance from downtime KPIs if required. Data quality checks included verifying unique work_order_id, ensuring created_at is earlier than closed_at, confirming allowed priority values, and validating relationships between fact and dimension tables. These checks ensured KPI accuracy and auditability.
+Question 7: What were the final deliverables of the Session 6 lab?
+Answer:
+The final deliverables included a cleaned and structured Power BI model with proper relationships, at least eight validated DAX measures, two stakeholder-friendly report pages, and a short insights summary explaining trends and recommendations. Additionally, an assumptions and data issues log was prepared to maintain traceability and quality control. The completed lab ensured readiness for QA validation and traceability work in the next session
